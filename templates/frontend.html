@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Browser voices</title>
+    <title>PDF TO MP3</title>
     <style type="text/css">
 					    	* {
 					  box-sizing: border-box;
@@ -216,14 +216,37 @@
       <body>
 
           <header>
-              <h1>CSC 800 PDF To MP3 Project by David Bradford</h1>
+              <h1>PDF To MP3 Project by David Bradford</h1>
           </header>
 
         <main>
-          <form class="input" id="voice-form" enctype=multipart/form-data method="post">
+		<form method="POST" action="" enctype="multipart/form-data" class="input">
+			<!-- <input type="file" name="file">
+			<input type="submit" value="Submit"> -->
+			<div class="field">
+				<label for="speech">Upload a .pdf file</label>
+				<!-- <input type="text" name="speech" id="speech" required /> -->
+				<input type="file" name="file" id="file" required />
+			  </div>
+			  <div class="field">
+				<label for="voices">Choose a Voice Assistant</label>
+				  <select name="voices" id="voices">
+					<option value="Male">Male</option>
+					<option value="Female">Female</option>
+				  </select>
+			  </div>
+			  <!-- <input type="submit" /> -->
+			<button class="button">
+			    Convert
+			    <div class="button__horizontal"></div>
+			    <div class="button__vertical"></div>
+		    </button>
+		</form>
+          <!-- <form class="input" id="voice-form" enctype=multipart/form-data method="post">
                 <div class="field">
                     <label for="speech">Upload a .pdf file</label>
-                    <input type="text" name="speech" id="speech" required />
+			  <input type="text" name="speech" id="speech" required />
+			  <input type="file" name="filename" id="filename" required />
                 </div>
                 <div class="field">
                     <label for="voices">Choose a Voice Assistant</label>
@@ -231,16 +254,14 @@
                           <option value="Male">Male</option>
                           <option value="Female">Female</option>
                       </select>
-                </div>
-              <!-- <button>
-                    CONVERT
-		  </button> -->
+		    </div>
+		    <input type="submit" />
 		  <button class="button">
-			Download
+			Convert
 			<div class="button__horizontal"></div>
 			<div class="button__vertical"></div>
 		</button>
-          </form>
+          </form> -->
         </main>
 
         <footer>
